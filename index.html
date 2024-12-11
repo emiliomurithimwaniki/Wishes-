@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Meme Generator</h1>
+        <input type="file" id="imageUpload" accept="image/*">
+        <canvas id="memeCanvas" width="600" height="400" style="display: block; margin: auto;"></canvas>
+        
+        <div>
+            <input type="text" id="topText" placeholder="Top Text">
+            <input type="text" id="bottomText" placeholder="Bottom Text">
+            <input type="number" id="fontSize" placeholder="Font Size" value="40" min="10" max="100">
+            <input type="color" id="fontColor" value="#ffffff">
+            <input type="color" id="textBgColor" value="#000000"> <!-- Default black -->
+            <input type="file" id="stickerUpload" accept="image/*">
+            <button id="addSticker">Add Sticker</button>
+            <label for="textBgColor">Text Background Color:</label>
+     </div>
+        <button id="generateMeme">Generate Meme</button>
+        <button id="downloadMeme">Download Meme</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
